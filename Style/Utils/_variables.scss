@@ -1,0 +1,19 @@
+/*colors*/
+
+$primary:#411388;
+$secondary:#d45500;
+$tertiary:lighten($primary, 35%);
+$dark:#1B1B1B;
+$light:#FCFBFC;
+$grad: linear-gradient(to left bottom, $primary, $tertiary);
+$backgrounds: (primary: $primary, secondary: $secondary, tertiary: $tertiary, light: $light, dark: $dark, gradient: $grad);
+
+/*text*/
+
+$text-colors: (dark:$dark, light: $light, primary: $primary);
+$font-sizes: (1: 32px, 2: 24px, 3: 20px, 4: 16px, 5: 14px);
+$font-weights: (bold: bold, 900: 900, 700: 700, 500: 500, 300: 300, 100: 100);
+
+/*margin padding*/
+
+$margin-paddings: (auto: auto, 1: 5px, 2:10px, 3:15px, 4:20px);

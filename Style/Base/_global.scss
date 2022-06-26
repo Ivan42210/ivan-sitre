@@ -1,0 +1,23 @@
+/*Global*/
+
+* {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+/*paddings*/
+
+.p {
+    @include padding;
+}
+
+
+/*backgrounds*/
+
+.bg {
+    @include background;
+}

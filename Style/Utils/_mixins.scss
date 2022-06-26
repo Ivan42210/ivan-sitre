@@ -1,0 +1,67 @@
+@mixin font-size {
+    @each $fs,
+    $font-size in $font-sizes {
+        &-#{$fs} {
+            font-size: map-get($font-sizes, $fs);
+        }
+    }
+}
+
+@mixin font-weight {
+    @each $fw,
+    $font-weight in $font-weights {
+        &-#{$fw} {
+            font-weight: map-get($font-weights, $fw);
+        }
+    }
+}
+
+@mixin padding {
+    @each $msr,
+    $margin-padding in $margin-paddings {
+        &-#{$msr} {
+            padding: map-get($margin-paddings, $msr);
+        }
+        &x-#{$msr} {
+            padding-left: map-get($margin-paddings, $msr);
+            padding-right: map-get($margin-paddings, $msr);
+        }
+        &y-#{$msr} {
+            padding-top: map-get($margin-paddings, $msr);
+            padding-bottom: map-get($margin-paddings, $msr);
+        }
+        &t-#{$msr} {
+            padding-top: map-get($margin-paddings, $msr);
+        }
+        &b-#{$msr} {
+            padding-bottom: map-get($margin-paddings, $msr);
+        }
+        &l-#{$msr} {
+            padding-left: map-get($margin-paddings, $msr);
+        }
+        &r-#{$msr} {
+            padding-right: map-get($margin-paddings, $msr);
+        }
+    }
+}
+
+@mixin tablet {
+    @media (min-width: 600px) {
+        @content;
+    }
+}
+
+@mixin desktop {
+    @media (min-width: 1025px) {
+        @content;
+    }
+}
+
+@mixin background {
+    @each $clr,
+    $background in $backgrounds {
+        &-#{$clr} {
+            background: map-get($backgrounds, $clr);
+        }
+    }
+}

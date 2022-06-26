@@ -1,0 +1,217 @@
+.hero {
+    height: auto;
+    @extend %flex;
+    flex-direction: column;
+    background: $grad;
+    &__container {
+        height: auto;
+        @extend %max-desktop;
+        @extend %flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        @include desktop {
+            flex-direction: row;
+            height: 96vh;
+        }
+    }
+    &__section-1 {
+        width: 100%;
+        height: 65vh;
+        @extend %flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2em;
+        @include desktop {
+            height: 100%;
+            gap: 7em;
+        }
+        img {
+            width: 225px;
+            animation: logo-appear .5s ease backwards;
+            @include desktop {
+                width: 75%;
+            }
+        }
+        ul {
+            width: 95%;
+            @extend %flex;
+            justify-content: space-between;
+            @include desktop {
+                width: 60%;
+            }
+            li:nth-child(1) {
+                animation: appear-1 .5s ease .8s backwards;
+            }
+            li:nth-child(2) {
+                animation: appear-1 .5s ease 1s backwards;
+            }
+            li:nth-child(3) {
+                animation: appear-1 .5s ease 1.2s backwards;
+            }
+            li>a {
+                @extend %flex;
+                justify-content: center;
+                align-items: center;
+                width: 94px;
+                height: 94px;
+                border: solid 3px $light;
+                border-radius: 50%;
+                transition: all .5s ease-in-out;
+                cursor: pointer;
+                i {
+                    @extend %text-white;
+                    font-size: 50px;
+                    transform: scale(1);
+                    transition: all .5s ease-in-out;
+                }
+                &:hover {
+                    transform: scale(1.5);
+                }
+            }
+        }
+        #service-id {
+            margin-top: 2em;
+            margin-left: -16px;
+            @include desktop {
+                margin-top: -5em;
+                margin-left: -16px;
+            }
+            li {
+                @extend %text-white;
+            }
+        }
+    }
+    &__section-2 {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        @extend %flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 4em;
+        @include desktop {
+            height: 100%;
+        }
+        form {
+            width: 300px;
+            background: lighten($primary, 17%);
+            @extend %flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 20px;
+            gap: 1em;
+            animation: appear-1 .5s ease 1.4s backwards;
+            box-shadow: 8px 10px 28px 1px $primary;
+            .form-icon {
+                height: 60px;
+                width: 60px;
+                border: solid 3px $light;
+                border-radius: 50%;
+                @extend %flex;
+                justify-content: center;
+                align-items: center;
+                i {
+                    @extend %text-white;
+                    font-size: 35px;
+                }
+            }
+            label {
+                @extend %text-white;
+            }
+            input {
+                width: 83%;
+                height: 40px;
+                background: transparent;
+                border: solid 2px $light;
+                border-radius: 30px;
+                color: $light;
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            textarea {
+                width: 83%;
+                height: 100px;
+                background: transparent;
+                border: solid 3px $light;
+                padding: 10px;
+                color: $light;
+                border-radius: 20px;
+            }
+            .btn-submit {
+                cursor: pointer;
+                background: $light;
+                color: $primary;
+                height: 50px;
+                width: 200px;
+                border-radius: 50px;
+                font-size: 24px;
+                font-weight: 600;
+                transition: all .5s ease-in-out;
+                transform: scale(1);
+                &:hover {
+                    color: $light;
+                    transform: scale(1.1);
+                    background: $primary;
+                }
+            }
+        }
+        .arrow-btn {
+            height: 75px;
+            width: 75px;
+            border: solid 3px $light;
+            @extend %flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            animation: zoom .5s ease 1.8s backwards;
+            transition: all .5s ease;
+            i {
+                @extend %text-white;
+                font-size: 40px;
+                transform: translateY(0);
+                transition: all .5s ease;
+            }
+            &:hover {
+                border: solid 3px $primary;
+                i {
+                    transform: translateY(70px);
+                }
+            }
+        }
+    }
+}
+
+@keyframes logo-appear {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes appear-1 {
+    0% {
+        transform: translatey(-300%);
+        opacity: 0;
+    }
+    100% {
+        transform: translatey(0);
+        opacity: 1;
+    }
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0);
+    }
+    50% {
+        transform: scale(1.5);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
