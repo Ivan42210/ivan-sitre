@@ -8,7 +8,19 @@
   display: flex;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form label, .hero__section-2 .arrow-btn i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::-webkit-input-placeholder, .hero__section-2 form textarea::-webkit-input-placeholder, .hero__section-2 .arrow-btn i {
+  color: #FCFBFC;
+}
+
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input:-ms-input-placeholder, .hero__section-2 form textarea:-ms-input-placeholder, .hero__section-2 .arrow-btn i {
+  color: #FCFBFC;
+}
+
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::-ms-input-placeholder, .hero__section-2 form textarea::-ms-input-placeholder, .hero__section-2 .arrow-btn i {
+  color: #FCFBFC;
+}
+
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::placeholder, .hero__section-2 form textarea::placeholder, .hero__section-2 .arrow-btn i {
   color: #FCFBFC;
 }
 
@@ -341,13 +353,13 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    height: 96vh;
+    height: 94.2vh;
   }
 }
 
 .hero__section-1 {
   width: 100%;
-  height: 65vh;
+  height: 81vh;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -369,14 +381,14 @@
 }
 
 .hero__section-1 img {
-  width: 225px;
+  max-width: 75%;
   -webkit-animation: logo-appear .5s ease backwards;
           animation: logo-appear .5s ease backwards;
 }
 
 @media (min-width: 1025px) {
   .hero__section-1 img {
-    width: 75%;
+    max-width: 75%;
   }
 }
 
@@ -442,7 +454,6 @@
 }
 
 .hero__section-1 #service-id {
-  margin-top: 2em;
   margin-left: -16px;
 }
 
@@ -522,6 +533,12 @@
   padding-right: 10px;
 }
 
+.hero__section-2 form input:focus-visible {
+  background-color: transparent;
+  outline: 4px solid #b691f0;
+  border: transparent 2px #FCFBFC;
+}
+
 .hero__section-2 form textarea {
   width: 83%;
   height: 100px;
@@ -530,6 +547,12 @@
   padding: 10px;
   color: #FCFBFC;
   border-radius: 20px;
+}
+
+.hero__section-2 form textarea:focus-visible {
+  background-color: transparent;
+  outline: 4px solid #b691f0;
+  border: transparent 2px #FCFBFC;
 }
 
 .hero__section-2 form .btn-submit {
@@ -573,6 +596,12 @@
   -webkit-transition: all .5s ease;
   -o-transition: all .5s ease;
   transition: all .5s ease;
+}
+
+@media (min-width: 1025px) {
+  .hero__section-2 .arrow-btn {
+    margin-top: 3em;
+  }
 }
 
 .hero__section-2 .arrow-btn i {
