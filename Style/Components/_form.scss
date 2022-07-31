@@ -1,0 +1,128 @@
+form {
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    .form-icon {
+        height: 60px;
+        width: 60px;
+        border: solid 3px $light;
+        border-radius: 50%;
+        @extend %flex;
+        justify-content: center;
+        align-items: center;
+        i {
+            @extend %text-white;
+            font-size: 35px;
+        }
+    }
+    input {
+        @extend %text-white;
+        width: 83%;
+        height: 40px;
+        background: transparent;
+        border: solid 2px $light;
+        border-radius: 30px;
+        color: $light;
+        padding-left: 10px;
+        padding-right: 10px;
+        &:focus-visible {
+            background-color: transparent;
+            outline: 4px solid lighten($primary, 45%);
+            border: transparent 2px $light;
+        }
+        &::placeholder {
+            @extend %text-white
+        }
+    }
+    textarea {
+        width: 83%;
+        height: 100px;
+        background: transparent;
+        border: solid 3px $light;
+        padding: 10px;
+        color: $light;
+        border-radius: 20px;
+        &::placeholder {
+            @extend %text-white
+        }
+        &:focus-visible {
+            background-color: transparent;
+            outline: 4px solid lighten($primary, 45%);
+            border: transparent 2px $light;
+        }
+    }
+    .btn-submit {
+        cursor: pointer;
+        background: $light;
+        color: $primary;
+        height: 50px;
+        width: 200px;
+        border-radius: 50px;
+        font-size: 24px;
+        font-weight: 600;
+        transition: all .5s ease-in-out;
+        transform: scale(1);
+        &:hover {
+            color: $light;
+            transform: scale(1.1);
+            background: $primary;
+        }
+    }
+}
+
+#checkOption {
+    width: 100%;
+    input[type="radio"] {
+        width: 20px;
+        margin: 0 10px 0 9px;
+    }
+}
+
+input[type="radio"]:checked {
+    color: $primary;
+}
+
+.formData {
+    display: flex;
+    align-items: center;
+    color: $light;
+}
+
+#message {
+    &-option {
+        text-align: center;
+    }
+}
+
+#modal {
+    &_form {
+        width: 300px;
+        background: lighten($primary, 17%);
+        border-radius: 20px;
+        min-height: 400px;
+        overflow: hidden;
+        animation: appear-1 .5s ease 1.4s backwards;
+        box-shadow: 8px 10px 28px 1px $primary;
+    }
+}
+
+.message {
+    &_valid {
+        margin: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        gap: 3em;
+        color: $light;
+        animation: appear-1 .5s ease 0s backwards;
+        h3 {
+            text-align: center;
+        }
+        i {
+            font-size: 2vw;
+        }
+    }
+}

@@ -2,25 +2,25 @@
 /*text*/
 /*margin padding*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 form, .hero__section-2 form .form-icon, .hero__section-2 .arrow-btn {
+.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 .arrow-btn, form, form .form-icon {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::-webkit-input-placeholder, .hero__section-2 form textarea::-webkit-input-placeholder, .hero__section-2 .arrow-btn i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input:-ms-input-placeholder, .hero__section-2 form textarea:-ms-input-placeholder, .hero__section-2 .arrow-btn i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::-ms-input-placeholder, .hero__section-2 form textarea::-ms-input-placeholder, .hero__section-2 .arrow-btn i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 form .form-icon i, .hero__section-2 form input, .hero__section-2 form input::placeholder, .hero__section-2 form textarea::placeholder, .hero__section-2 .arrow-btn i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder {
   color: #FCFBFC;
 }
 
@@ -487,99 +487,6 @@
   }
 }
 
-.hero__section-2 form {
-  width: 300px;
-  background: #651ed4;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  border-radius: 20px;
-  gap: 1em;
-  -webkit-animation: appear-1 .5s ease 1.4s backwards;
-          animation: appear-1 .5s ease 1.4s backwards;
-  -webkit-box-shadow: 8px 10px 28px 1px #411388;
-          box-shadow: 8px 10px 28px 1px #411388;
-}
-
-.hero__section-2 form .form-icon {
-  height: 60px;
-  width: 60px;
-  border: solid 3px #FCFBFC;
-  border-radius: 50%;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.hero__section-2 form .form-icon i {
-  font-size: 35px;
-}
-
-.hero__section-2 form input {
-  width: 83%;
-  height: 40px;
-  background: transparent;
-  border: solid 2px #FCFBFC;
-  border-radius: 30px;
-  color: #FCFBFC;
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.hero__section-2 form input:focus-visible {
-  background-color: transparent;
-  outline: 4px solid #b691f0;
-  border: transparent 2px #FCFBFC;
-}
-
-.hero__section-2 form textarea {
-  width: 83%;
-  height: 100px;
-  background: transparent;
-  border: solid 3px #FCFBFC;
-  padding: 10px;
-  color: #FCFBFC;
-  border-radius: 20px;
-}
-
-.hero__section-2 form textarea:focus-visible {
-  background-color: transparent;
-  outline: 4px solid #b691f0;
-  border: transparent 2px #FCFBFC;
-}
-
-.hero__section-2 form .btn-submit {
-  cursor: pointer;
-  background: #FCFBFC;
-  color: #411388;
-  height: 50px;
-  width: 200px;
-  border-radius: 50px;
-  font-size: 24px;
-  font-weight: 600;
-  -webkit-transition: all .5s ease-in-out;
-  -o-transition: all .5s ease-in-out;
-  transition: all .5s ease-in-out;
-  -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
-}
-
-.hero__section-2 form .btn-submit:hover {
-  color: #FCFBFC;
-  -webkit-transform: scale(1.1);
-      -ms-transform: scale(1.1);
-          transform: scale(1.1);
-  background: #411388;
-}
-
 .hero__section-2 .arrow-btn {
   height: 75px;
   width: 75px;
@@ -700,5 +607,170 @@
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+form {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 1em;
+}
+
+form .form-icon {
+  height: 60px;
+  width: 60px;
+  border: solid 3px #FCFBFC;
+  border-radius: 50%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+form .form-icon i {
+  font-size: 35px;
+}
+
+form input {
+  width: 83%;
+  height: 40px;
+  background: transparent;
+  border: solid 2px #FCFBFC;
+  border-radius: 30px;
+  color: #FCFBFC;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+form input:focus-visible {
+  background-color: transparent;
+  outline: 4px solid #b691f0;
+  border: transparent 2px #FCFBFC;
+}
+
+form textarea {
+  width: 83%;
+  height: 100px;
+  background: transparent;
+  border: solid 3px #FCFBFC;
+  padding: 10px;
+  color: #FCFBFC;
+  border-radius: 20px;
+}
+
+form textarea:focus-visible {
+  background-color: transparent;
+  outline: 4px solid #b691f0;
+  border: transparent 2px #FCFBFC;
+}
+
+form .btn-submit {
+  cursor: pointer;
+  background: #FCFBFC;
+  color: #411388;
+  height: 50px;
+  width: 200px;
+  border-radius: 50px;
+  font-size: 24px;
+  font-weight: 600;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+}
+
+form .btn-submit:hover {
+  color: #FCFBFC;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  background: #411388;
+}
+
+#checkOption {
+  width: 100%;
+}
+
+#checkOption input[type="radio"] {
+  width: 20px;
+  margin: 0 10px 0 9px;
+}
+
+input[type="radio"]:checked {
+  color: #411388;
+}
+
+.formData {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #FCFBFC;
+}
+
+#message-option {
+  text-align: center;
+}
+
+#modal_form {
+  width: 300px;
+  background: #651ed4;
+  border-radius: 20px;
+  min-height: 400px;
+  overflow: hidden;
+  -webkit-animation: appear-1 .5s ease 1.4s backwards;
+          animation: appear-1 .5s ease 1.4s backwards;
+  -webkit-box-shadow: 8px 10px 28px 1px #411388;
+          box-shadow: 8px 10px 28px 1px #411388;
+}
+
+.message_valid {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  gap: 3em;
+  color: #FCFBFC;
+  -webkit-animation: appear-1 .5s ease 0s backwards;
+          animation: appear-1 .5s ease 0s backwards;
+}
+
+.message_valid h3 {
+  text-align: center;
+}
+
+.message_valid i {
+  font-size: 2vw;
+}
+
+.valid {
+  color: green;
+  font-size: 12px;
+}
+
+.invalid {
+  color: #d45500;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */
