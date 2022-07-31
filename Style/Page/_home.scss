@@ -122,3 +122,12 @@
         }
     }
 }
+
+.part {
+    &__services {
+        height: 50vh;
+    }
+    &__introduction {
+        height: 50vh;
+    }
+}

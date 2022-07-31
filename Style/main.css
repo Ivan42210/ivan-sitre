@@ -531,6 +531,14 @@
           transform: translateY(70px);
 }
 
+.part__services {
+  height: 50vh;
+}
+
+.part__introduction {
+  height: 50vh;
+}
+
 @-webkit-keyframes logo-appear {
   0% {
     -webkit-transform: rotate(0deg);
