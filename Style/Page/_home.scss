@@ -17,7 +17,7 @@
     }
     &__section-1 {
         width: 100%;
-        height: 81vh;
+        height: auto;
         @extend %flex;
         flex-direction: column;
         align-items: center;
@@ -31,7 +31,7 @@
             max-width: 75%;
             animation: logo-appear .5s ease backwards;
             @include desktop {
-                max-width: 75%;
+                max-width: 50%;
             }
         }
         ul {
@@ -90,13 +90,12 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        gap: 4em;
         @include desktop {
             height: 100%;
         }
         .arrow-btn {
-            height: 75px;
-            width: 75px;
+            height: 50px;
+            width: 50px;
             border: solid 3px $light;
             @extend %flex;
             justify-content: center;
@@ -109,14 +108,14 @@
             }
             i {
                 @extend %text-white;
-                font-size: 40px;
+                font-size: 30px;
                 transform: translateY(0);
                 transition: all .5s ease;
             }
             &:hover {
                 border: solid 3px $primary;
                 i {
-                    transform: translateY(70px);
+                    transform: translateY(45px);
                 }
             }
         }
@@ -126,8 +125,24 @@
 .part {
     &__services {
         height: 50vh;
+        position: relative;
     }
     &__introduction {
         height: 50vh;
+    }
+}
+
+#placeholder {
+    &__webCreation {
+        @extend %flex;
+        width: 33%;
+    }
+    &__formation {
+        @extend %flex;
+        width: 33%;
+    }
+    &__translation {
+        @extend %flex;
+        width: 33%;
     }
 }

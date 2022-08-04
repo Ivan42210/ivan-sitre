@@ -21,3 +21,10 @@
 .bg {
     @include background;
 }
+
+.container {
+    &__adapted {
+        position: relative;
+        @extend %max-desktop;
+    }
+}

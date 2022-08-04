@@ -1,0 +1,7 @@
+.card {
+    &__container {
+        @extend %flex;
+        flex-wrap: wrap;
+    }
+    &__figure {}
+}
