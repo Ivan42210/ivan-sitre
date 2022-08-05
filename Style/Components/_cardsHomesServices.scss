@@ -16,6 +16,10 @@
         margin-bottom: 20px;
         border-radius: 20px;
         box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
+        transition: all .5s ease-in-out;
+        &:hover {
+            transform: scale(1.1);
+        }
         @include desktop {
             margin: 0;
         }
@@ -32,11 +36,34 @@
             flex-direction: column;
             align-items: center;
             @extend %text-white;
+            gap: 1em;
+            li {
+                margin-bottom: 5px;
+            }
         }
     }
     &__image {
         object-fit: cover;
-        height: 60%;
+        height: 50%;
         width: 100%;
+        @include desktop {
+            height: 60%;
+        }
+    }
+    &__icon {
+        &--desktop {
+            display: none;
+            @include desktop {
+                display: block;
+                font-size: 30px;
+            }
+        }
+        &--tablet {
+            display: block;
+            font-size: 30px;
+            @include desktop {
+                display: none;
+            }
+        }
     }
 }
