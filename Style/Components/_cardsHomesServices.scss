@@ -57,12 +57,29 @@
             }
         }
         &--two {
+            @extend %flex;
+            flex-direction: column;
+            align-items: center;
             position: absolute;
             width: 100%;
             height: 100%;
             background: $light;
             transform: translate(101%);
             transition: all .5s ease-in;
+            padding: 10px 0;
+            color: $primary;
+            ul {
+                margin-top: 30px;
+                margin-left: 20px;
+                width: 100%;
+                li {
+                    list-style: inside;
+                }
+            }
+            a {
+                position: absolute;
+                bottom: 2em;
+            }
         }
     }
     &__image {
@@ -87,6 +104,27 @@
             @include desktop {
                 display: none;
             }
+        }
+    }
+}
+
+.infos {
+    margin-top: 30px;
+    height: 80px;
+    @extend %flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: lighten($primary, 17%);
+    &__service {
+        @extend %flex;
+        gap: 1em;
+        >span {
+            @extend %text-white;
+        }
+        >i {
+            @extend %text-white;
         }
     }
 }

@@ -2,25 +2,25 @@
 /*text*/
 /*margin padding*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 .arrow-btn, form, form .form-icon, .card__container, .card__body--one {
+.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 .arrow-btn, form, form .form-icon, .card__container, .card__body--one, .card__body--two, .infos, .infos__service {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, .card__body--one {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, .card__body--one {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, .card__body--one {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder, .card__body--one {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder, .card__body--one, .infos__service > span, .infos__service > i {
   color: #FCFBFC;
 }
 
@@ -906,6 +906,13 @@ input[type="radio"]:checked {
 }
 
 .card__body--two {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   position: absolute;
   width: 100%;
   height: 100%;
@@ -916,6 +923,23 @@ input[type="radio"]:checked {
   -webkit-transition: all .5s ease-in;
   -o-transition: all .5s ease-in;
   transition: all .5s ease-in;
+  padding: 10px 0;
+  color: #411388;
+}
+
+.card__body--two ul {
+  margin-top: 30px;
+  margin-left: 20px;
+  width: 100%;
+}
+
+.card__body--two ul li {
+  list-style: inside;
+}
+
+.card__body--two a {
+  position: absolute;
+  bottom: 2em;
 }
 
 .card__image {
@@ -951,5 +975,98 @@ input[type="radio"]:checked {
   .card__icon--tablet {
     display: none;
   }
+}
+
+.infos {
+  margin-top: 30px;
+  height: 80px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  background-color: #651ed4;
+}
+
+.infos__service {
+  gap: 1em;
+}
+
+/*buttons*/
+.btn {
+  width: 150px;
+  height: 45px;
+  border-radius: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  -webkit-transition: all .5s ease-in-out;
+  -o-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  font-weight: 800;
+}
+
+.btn:hover {
+  border: solid 3px;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.btn-primary {
+  background-color: #411388;
+  color: #FCFBFC;
+}
+
+.btn-primary:hover {
+  background-color: #FCFBFC;
+  color: #411388;
+  border-color: #411388;
+}
+
+.btn-secondary {
+  background-color: #d45500;
+  color: #FCFBFC;
+}
+
+.btn-secondary:hover {
+  background-color: #FCFBFC;
+  color: #d45500;
+  border-color: #d45500;
+}
+
+.btn-tertiary {
+  background-color: #9964e9;
+  color: #FCFBFC;
+}
+
+.btn-tertiary:hover {
+  background-color: #FCFBFC;
+  color: #9964e9;
+  border-color: #9964e9;
+}
+
+.btn-dark {
+  background-color: #1B1B1B;
+  color: #FCFBFC;
+}
+
+.btn-dark:hover {
+  background-color: #FCFBFC;
+  color: #1B1B1B;
+  border-color: #1B1B1B;
 }
 /*# sourceMappingURL=main.css.map */

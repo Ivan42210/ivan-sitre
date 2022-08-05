@@ -45,6 +45,21 @@
     }
 }
 
+@mixin button {
+    @each $clr,
+    $btn-background in $btn-backgrounds {
+        &-#{$clr} {
+            background-color: map-get($btn-backgrounds, $clr);
+            color: $light;
+            &:hover {
+                background-color: $light;
+                color: map-get($btn-backgrounds, $clr);
+                border-color: map-get($btn-backgrounds, $clr);
+            }
+        }
+    }
+}
+
 @mixin tablet {
     @media (min-width: 600px) {
         @content;

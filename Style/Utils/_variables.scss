@@ -7,6 +7,7 @@ $dark:#1B1B1B;
 $light:#FCFBFC;
 $grad: linear-gradient(to left bottom, $primary, $tertiary);
 $backgrounds: (primary: $primary, secondary: $secondary, tertiary: $tertiary, light: $light, dark: $dark, gradient: $grad);
+$btn-backgrounds: (primary: $primary, secondary: $secondary, tertiary: $tertiary, dark: $dark);
 
 /*text*/
 
