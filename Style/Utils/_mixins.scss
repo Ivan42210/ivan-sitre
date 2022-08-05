@@ -57,6 +57,12 @@
     }
 }
 
+@mixin big-screen {
+    @media (min-width: 1450px) {
+        @content;
+    }
+}
+
 @mixin background {
     @each $clr,
     $background in $backgrounds {

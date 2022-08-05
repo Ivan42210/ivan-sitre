@@ -124,25 +124,25 @@
 
 .part {
     &__services {
-        height: 50vh;
+        height: auto;
         position: relative;
+        padding: 20px 0;
+        @include desktop {
+            height: 100vh;
+            padding: 0;
+        }
+        @include big-screen {
+            height: 50vh;
+        }
     }
     &__introduction {
-        height: 50vh;
-    }
-}
-
-#placeholder {
-    &__webCreation {
-        @extend %flex;
-        width: 33%;
-    }
-    &__formation {
-        @extend %flex;
-        width: 33%;
-    }
-    &__translation {
-        @extend %flex;
-        width: 33%;
+        height: auto;
+        @include desktop {
+            height: 100vh;
+            padding: 0;
+        }
+        @include big-screen {
+            height: 50vh;
+        }
     }
 }

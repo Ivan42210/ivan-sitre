@@ -2,25 +2,25 @@
 /*text*/
 /*margin padding*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
-.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 .arrow-btn, #placeholder__webCreation, #placeholder__formation, #placeholder__translation, form, form .form-icon, .card__container {
+.nav-1, .nav-1__menu, .hero, .hero__container, .hero__section-1, .hero__section-1 ul, .hero__section-1 ul li > a, .hero__section-2, .hero__section-2 .arrow-btn, form, form .form-icon, .card__container, .card__body--one {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, .card__body--one {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, .card__body--one {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, .card__body--one {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder, .card__body--one {
   color: #FCFBFC;
 }
 
@@ -535,24 +535,39 @@
 }
 
 .part__services {
-  height: 50vh;
+  height: auto;
   position: relative;
+  padding: 20px 0;
+}
+
+@media (min-width: 1025px) {
+  .part__services {
+    height: 100vh;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1450px) {
+  .part__services {
+    height: 50vh;
+  }
 }
 
 .part__introduction {
-  height: 50vh;
+  height: auto;
 }
 
-#placeholder__webCreation {
-  width: 33%;
+@media (min-width: 1025px) {
+  .part__introduction {
+    height: 100vh;
+    padding: 0;
+  }
 }
 
-#placeholder__formation {
-  width: 33%;
-}
-
-#placeholder__translation {
-  width: 33%;
+@media (min-width: 1450px) {
+  .part__introduction {
+    height: 50vh;
+  }
 }
 
 @-webkit-keyframes logo-appear {
@@ -799,7 +814,58 @@ input[type="radio"]:checked {
 }
 
 .card__container {
+  height: 100%;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.card__figure {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  width: 337px;
+  height: 460px;
+  background: #651ed4;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
+          box-shadow: 0 6px 6px rgba(0, 0, 0, 0.08);
+}
+
+@media (min-width: 1025px) {
+  .card__figure {
+    margin: 0;
+  }
+}
+
+@media (min-width: 1450px) {
+  .card__figure {
+    width: 20%;
+  }
+}
+
+.card__body--one {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 60%;
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
