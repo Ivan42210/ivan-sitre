@@ -27,6 +27,7 @@
         }
         &:hover {
             transform: scale(1.1);
+            box-shadow: 0 6px 6px darken($light, 17%);
             >.card__body--one {
                 transform: translate(-100%);
             }
@@ -116,7 +117,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    background-color: lighten($primary, 17%);
+    background-color: lighten($primary, 25%);
     &__service {
         @extend %flex;
         gap: 1em;
@@ -125,6 +126,11 @@
         }
         >i {
             @extend %text-white;
+        }
+        h5 {
+            @extend %text-white;
+            margin: 5px;
+            text-align: justify;
         }
     }
 }

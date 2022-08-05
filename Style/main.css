@@ -8,19 +8,19 @@
   display: flex;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-webkit-input-placeholder, form textarea::-webkit-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i, .infos__service h5 {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input:-ms-input-placeholder, form textarea:-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i, .infos__service h5 {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::-ms-input-placeholder, form textarea::-ms-input-placeholder, .card__body--one, .infos__service > span, .infos__service > i, .infos__service h5 {
   color: #FCFBFC;
 }
 
-.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder, .card__body--one, .infos__service > span, .infos__service > i {
+.nav-1__logo, .nav-1__menu li > a, .hero__section-1 ul li > a i, .hero__section-1 #service-id li, .hero__section-2 .arrow-btn i, form .form-icon i, form input, form input::placeholder, form textarea::placeholder, .card__body--one, .infos__service > span, .infos__service > i, .infos__service h5 {
   color: #FCFBFC;
 }
 
@@ -858,6 +858,8 @@ input[type="radio"]:checked {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-box-shadow: 0 6px 6px #d7c9d7;
+          box-shadow: 0 6px 6px #d7c9d7;
 }
 
 .card__figure:hover > .card__body--one {
@@ -991,11 +993,16 @@ input[type="radio"]:checked {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: #651ed4;
+  background-color: #7b37e3;
 }
 
 .infos__service {
   gap: 1em;
+}
+
+.infos__service h5 {
+  margin: 5px;
+  text-align: justify;
 }
 
 /*buttons*/
